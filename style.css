@@ -13,7 +13,8 @@ body {
 }
 
 header {
-    background-color: grey;
+    background-color: white;
+    padding: 10px;
 }
 
 header h1 {
@@ -21,9 +22,13 @@ header h1 {
     color: blue;
 }
 
+header li {
+    list-style: none;
+}
+
 header a {
     text-decoration: none;
-    color: white;
+    color: black;
     font-weight: bolder;
 }
 

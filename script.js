@@ -1,10 +1,13 @@
-const colors = ["green", "red", "yellow", "purple", "black", "limegreen"];
+const colors = ["Green", "Red", "Yellow", "Purple", "Black", "Limegreen", "Pink", "Blue", "Grey", "Salmon"];
 const btn = document.getElementById("btn");
 const color = document.querySelector(".color");
 
-btn.addEventListener("click", function () {
-    //get random number between 0 and 5
-    const randomNumber = 2;
+btn.addEventListener("click", function () { 
+    const randomNumber = getRandomNumber();
     document.body.style.backgroundColor = colors[randomNumber];
     color.textContent = colors[randomNumber];
 });
+
+function getRandomNumber() {
+    return Math.floor(Math.random() * colors.length);
+}
