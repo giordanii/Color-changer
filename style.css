@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 
 * { 
     margin: 0;
@@ -13,17 +13,28 @@ body {
 }
 
 header {
-    background-color: white;
+    display: flex;
+    background: rgba(255, 255, 255, 0.267);
     padding: 10px;
+    justify-content: space-between;
 }
 
 header h1 {
-    font-family: 'BhuTuka Expanded One', cursive;
-    color: blue;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    font-weight: bolder;
 }
 
-header li {
+header ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+header ul li {
+    margin-top: 7px;
     list-style: none;
+    padding-right: 10px;
+    align-items: center;
 }
 
 header a {
@@ -36,14 +47,8 @@ header a:hover {
     text-decoration: underline;
 }
 
-main {
-    margin-top: 50px;
-    text-align: center;
-    display: grid;
-    place-items: center;
-}
-
 main h1 {
+    font-size: 4em;
     background-color: black;
     padding: 10px;
     border-radius: 15px;
@@ -51,6 +56,7 @@ main h1 {
 }
 
 main button {
+    font-size: 1.3em;
     cursor: pointer;
     background-color: transparent;
     color: white;
@@ -68,4 +74,32 @@ main button:hover {
 
 main h1 span {
     text-transform: capitalize;
+}
+
+div.container {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 8px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
